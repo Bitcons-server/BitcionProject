@@ -1,0 +1,204 @@
+#div-Login
+{
+	width:520px;
+	height:420px;
+	border:solid 0px;
+	background-color:#6CC6CB;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	animation:color 6s;
+	animation-iteration-count:5;
+}
+#user
+{
+	width:400px;
+	height:50px;
+	color:black;
+	background-color:white;
+	border:solid 0px;
+    border-color:grey;
+    border-radius:100px;
+    position: absolute;
+    top:70px;
+    left:70px;
+    font-family: "微软雅黑";
+    font-size:20px;
+}
+#user:hover
+{
+	box-shadow:2px 2px 6px red,-2px -2px 6px blue;
+}
+@keyframes color
+{
+	0%{background:-webkit-gradient(linear, left top, left bottom, from(#CCFBFF), to(#EF96C5));}
+	25%{background:-webkit-gradient(linear, left top, left bottom, from(#EAD6EE), to(#AOF1EA));}
+	50%{background:-webkit-gradient(linear, left top, left bottom, from(#EEBD89), to(#D13ABD));}
+	100%{background:-webkit-gradient(linear, left top, left bottom, from(#EAE5C9), to(#6CC6CB));}
+}
+#img-user
+{
+	width:50px;
+	height:50px;
+	position: absolute;
+	top:70px;
+	left:10px;"
+}
+#img-pwd
+{
+	width:50px;
+	height:50px;
+	position: absolute;
+	top:200px;
+	left:10px;"
+}
+#pwd
+{
+	width:400px;
+	height:50px;
+	color:black;
+	background-color:white;
+	border:solid 0px;
+    border-color:grey;
+    border-radius:100px;
+    position: absolute;
+    top:200px;
+    left:70px;
+    font-family: "微软雅黑";
+    font-size:20px;
+}
+#pwd:hover
+{
+	box-shadow:2px 2px 6px red,-2px -2px 6px blue;
+}
+#btn-login
+{
+    position: absolute;
+    top:300px;
+    left:60px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+    width:120px;
+    height:50px;
+    border: solid 1px;
+	border-color: #EAE5C9;
+}
+#btn-reset
+{
+	position: absolute;
+    top:300px;
+    left:350px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+    width:120px;
+    height:50px;
+    border: solid 1px;
+    border-color: #EAE5C9;
+}
+#btn-register
+{
+    position: absolute;
+    top:300px;
+    left:70px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+    width:120px;
+    height:50px;
+    border: solid 1px;
+	border-color: #EAE5C9;
+}
+#btn-login:hover
+{
+background: linear-gradient(-45deg, rgba(9,69,138,0.2), rgba(68,155,255,0.7), rgba(117,113,251,0.7), rgba(68,155,255,0.7), rgba(9,69,138,0.2));background-size: 400% 400%;-webkit-animation: Gradient 15s ease infinite;-moz-animation: Gradient 15s ease infinite;animation: Gradient 15s ease infinite;
+    border: solid 0px;
+}
+#btn-reset:hover
+{
+background: linear-gradient(-45deg, rgba(9,69,138,0.2), rgba(68,155,255,0.7), rgba(117,113,251,0.7), rgba(68,155,255,0.7), rgba(9,69,138,0.2));background-size: 400% 400%;-webkit-animation: Gradient 15s ease infinite;-moz-animation: Gradient 15s ease infinite;animation: Gradient 15s ease infinite;
+    border: solid 0px;
+}
+#btn-register:hover
+{
+background: linear-gradient(-45deg, rgba(9,69,138,0.2), rgba(68,155,255,0.7), rgba(117,113,251,0.7), rgba(68,155,255,0.7), rgba(9,69,138,0.2));background-size: 400% 400%;-webkit-animation: Gradient 15s ease infinite;-moz-animation: Gradient 15s ease infinite;animation: Gradient 15s ease infinite;
+    border: solid 0px;
+}
+#btn
+{
+	position: absolute;
+    top:300px;
+    left:215px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+    width:120px;
+    height:50px;
+    border: solid 1px;
+	border-color: #EAE5C9;
+}
+#btn:hover
+{
+background: linear-gradient(-45deg, rgba(9,69,138,0.2), rgba(68,155,255,0.7), rgba(117,113,251,0.7), rgba(68,155,255,0.7), rgba(9,69,138,0.2));background-size: 400% 400%;-webkit-animation: Gradient 15s ease infinite;-moz-animation: Gradient 15s ease infinite;animation: Gradient 15s ease infinite;
+    border: solid 0px;
+}
+#btn-back
+{
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+    width:120px;
+    height:50px;
+    border: solid 1px;
+	border-color: #EAE5C9;
+}
+#btn-back:hover
+{
+    background: linear-gradient(-45deg, rgba(9,69,138,0.2), rgba(68,155,255,0.7), rgba(117,113,251,0.7), rgba(68,155,255,0.7), rgba(9,69,138,0.2));background-size: 400% 400%;-webkit-animation: Gradient 15s ease infinite;-moz-animation: Gradient 15s ease infinite;animation: Gradient 15s ease infinite;
+    border: solid 0px;
+}
+#code
+{
+	width:150px;
+	height:50px;
+	color:black;
+	background-color:white;
+    border:solid 0px;
+    border-color:grey;
+    border-radius:100px;
+    position: absolute;
+    top:290px;
+    left:320px;
+    font-family: "微软雅黑";
+    font-size:20px;
+}
+#usercode
+{
+	width:150px;
+	height:50px;
+	color:black;
+	background-color:white;
+    border:solid 0px;
+    border-color:grey;
+    border-radius:100px;
+    position: absolute;
+    top:290px;
+    left:70px;
+    font-family: "微软雅黑";
+    font-size:20px;
+}
+#usercode:hover
+{
+	box-shadow:2px 2px 6px red,-2px -2px 6px blue;
+}
+#code:hover
+{
+	box-shadow:2px 2px 6px red,-2px -2px 6px blue;
+}

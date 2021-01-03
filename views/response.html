@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<meta content="网页特效,特效代码,jQuery,css特效,Js代码" name="keywords"/>
+<meta content="jQuery弹出层效果，有关闭按钮，代码简单易懂，可以随意修改弹出层的参数。" name="description"/>
+<script src="/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎登陆比特币系统</title>
+
+    <style>
+        div#font{
+            height: 300px;
+            width: 300px;
+           background-color: red;
+
+        }
+        .black_overlay {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 1001;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=80);
+        }
+
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+            border: 16px solid lightblue;
+            background-color: white;
+            z-index: 1002;
+            overflow: auto;
+        }
+
+
+    </style>
+    <script type="text/javascript">
+        //弹出隐藏层
+        function ShowDiv(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'block';
+            document.getElementById(bg_div).style.display = 'block';
+            var bgdiv = document.getElementById(bg_div);
+            bgdiv.style.width = document.body.scrollWidth;
+// bgdiv.style.height = $(document).height();
+            $("#" + bg_div).height($(document).height());
+        }
+
+        //关闭弹出层
+        function CloseDiv(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'none';
+            document.getElementById(bg_div).style.display = 'none';
+        }
+
+        //弹出隐藏层
+        function ShowDiv1(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'block';
+            document.getElementById(bg_div).style.display = 'block';
+            var bgdiv1 = document.getElementById(bg_div);
+            bgdiv1.style.width = document.body.scrollWidth;
+// bgdiv.style.height = $(document).height();
+            $("#" + bg_div).height($(document).height());
+        }
+
+        //关闭弹出层
+        function CloseDiv1(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'none';
+            document.getElementById(bg_div).style.display = 'none';
+        }
+
+        //弹出隐藏层
+        function ShowDiv2(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'block';
+            document.getElementById(bg_div).style.display = 'block';
+            var bgdiv2 = document.getElementById(bg_div);
+            bgdiv2.style.width = document.body.scrollWidth;
+// bgdiv.style.height = $(document).height();
+            $("#" + bg_div).height($(document).height());
+        }
+
+        //关闭弹出层
+        function CloseDiv2(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'none';
+            document.getElementById(bg_div).style.display = 'none';
+        }
+
+        //弹出隐藏层
+        function ShowDiv3(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'block';
+            document.getElementById(bg_div).style.display = 'block';
+            var bgdiv3 = document.getElementById(bg_div);
+            bgdiv3.style.width = document.body.scrollWidth;
+// bgdiv.style.height = $(document).height();
+            $("#" + bg_div).height($(document).height());
+        }
+
+        //关闭弹出层
+        function CloseDiv3(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'none';
+            document.getElementById(bg_div).style.display = 'none';
+        }
+
+        //弹出隐藏层
+        function ShowDiv4(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'block';
+            document.getElementById(bg_div).style.display = 'block';
+            var bgdiv4 = document.getElementById(bg_div);
+            bgdiv4.style.width = document.body.scrollWidth;
+// bgdiv.style.height = $(document).height();
+            $("#" + bg_div).height($(document).height());
+        }
+
+        //关闭弹出层
+        function CloseDiv4(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'none';
+            document.getElementById(bg_div).style.display = 'none';
+        }
+
+        //弹出隐藏层
+        function ShowDiv5(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'block';
+            document.getElementById(bg_div).style.display = 'block';
+            var bgdiv1 = document.getElementById(bg_div);
+            bgdiv1.style.width = document.body.scrollWidth;
+// bgdiv.style.height = $(document).height();
+            $("#" + bg_div).height($(document).height());
+        }
+
+        //关闭弹出层
+        function CloseDiv5(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'none';
+            document.getElementById(bg_div).style.display = 'none';
+        }
+
+
+        //弹出隐藏层
+        function ShowDiv6(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'block';
+            document.getElementById(bg_div).style.display = 'block';
+            var bgdiv1 = document.getElementById(bg_div);
+            bgdiv1.style.width = document.body.scrollWidth;
+// bgdiv.style.height = $(document).height();
+            $("#" + bg_div).height($(document).height());
+        }
+
+        //关闭弹出层
+        function CloseDiv6(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'none';
+            document.getElementById(bg_div).style.display = 'none';
+        }
+
+        //弹出隐藏层
+        function ShowDiv7(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'block';
+            document.getElementById(bg_div).style.display = 'block';
+            var bgdiv7 = document.getElementById(bg_div);
+            bgdiv7.style.width = document.body.scrollWidth;
+// bgdiv.style.height = $(document).height();
+            $("#" + bg_div).height($(document).height());
+        }
+
+        //关闭弹出层
+        function CloseDiv7(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'none';
+            document.getElementById(bg_div).style.display = 'none';
+        }
+
+        //弹出隐藏层
+        function ShowDiv8(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'block';
+            document.getElementById(bg_div).style.display = 'block';
+            var bgdiv8 = document.getElementById(bg_div);
+            bgdiv8.style.width = document.body.scrollWidth;
+// bgdiv.style.height = $(document).height();
+            $("#" + bg_div).height($(document).height());
+        }
+
+        //关闭弹出层
+        function CloseDiv8(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'none';
+            document.getElementById(bg_div).style.display = 'none';
+        }
+
+        //弹出隐藏层
+        function ShowDiv9(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'block';
+            document.getElementById(bg_div).style.display = 'block';
+            var bgdiv9 = document.getElementById(bg_div);
+            bgdiv9.style.width = document.body.scrollWidth;
+// bgdiv.style.height = $(document).height();
+            $("#" + bg_div).height($(document).height());
+        }
+
+        //关闭弹出层
+        function CloseDiv9(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'none';
+            document.getElementById(bg_div).style.display = 'none';
+        }
+
+        //弹出隐藏层
+        function ShowDiv10(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'block';
+            document.getElementById(bg_div).style.display = 'block';
+            var bgdiv10 = document.getElementById(bg_div);
+            bgdiv10.style.width = document.body.scrollWidth;
+// bgdiv.style.height = $(document).height();
+            $("#" + bg_div).height($(document).height());
+        }
+
+        //关闭弹出层
+        function CloseDiv10(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'none';
+            document.getElementById(bg_div).style.display = 'none';
+        }
+
+        //弹出隐藏层
+        function ShowDiv11(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'block';
+            document.getElementById(bg_div).style.display = 'block';
+            var bgdiv11 = document.getElementById(bg_div);
+            bgdiv11.style.width = document.body.scrollWidth;
+// bgdiv.style.height = $(document).height();
+            $("#" + bg_div).height($(document).height());
+        }
+
+        //关闭弹出层
+        function CloseDiv11(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'none';
+            document.getElementById(bg_div).style.display = 'none';
+        }
+
+    </script>
+</head>
+<body>
+<div id="font">
+    <span>请执行比特币命令</span>
+</div>
+
+<input id="Button" type="button" value="GetBlockChainInfo" onclick="ShowDiv('MyDiv','fade')"/><br>
+<input id="Button" type="button" value="GetBlockCount" onclick="ShowDiv1('MyDiv1','fade1')"/><br>
+<input id="Button" type="button" value="GetBlockHash" onclick="ShowDiv2('MyDiv2','fade2')"/><br>
+<input id="Button" type="button" value="GetBlockHash" onclick="ShowDiv3('MyDiv3','fade3')"/><br>
+<input id="Button" type="button" value="GetBestBlockHash" onclick="ShowDiv4('MyDiv4','fade4')"/><br>
+<input id="Button" type="button" value="GetMininginfo" onclick="ShowDiv5('MyDiv5','fade5')"/><br>
+<input id="Button" type="button" value="GetWalletInfo" onclick="ShowDiv6('MyDiv6','fade6')"/><br>
+<input id="Button" type="button" value="VerifyChain" onclick="ShowDiv7('MyDiv7','fade7')"/><br>
+<input id="Button" type="button" value="Pruneblockchain" onclick="ShowDiv8('MyDiv8','fade8')"/><br>
+<input id="Button" type="button" value="GetBlockHeader" onclick="ShowDiv9('MyDiv9','fade9')"/><br>
+<input id="Button" type="button" value="GetDifficulty" onclick="ShowDiv10('MyDiv10','fade10')"/><br>
+<input id="Button" type="button" value="Getchaintxstats" onclick="ShowDiv11('MyDiv11','fade11')"/><br>
+
+
+<!--弹出层时背景层DIV-->
+<div id="fade" class="black_overlay">
+</div>
+<div id="MyDiv" class="white_content">
+    <div style="text-align: right; cursor: default; height: 40px;" id="move">
+        <span style="font-size: 16px;" onclick="CloseDiv('MyDiv','fade')">关闭</span>
+    </div>
+    <div>
+        <span>区块难度为：{{.BlockChainInfo}}</span><br>
+        <span>区块链名称：{{.BlockChainInfo1}}</span><br>
+        <span>本地已经验证区块数：{{.BlockChainInfo2}}</span><br>
+        <span>区块头：{{.BlockChainInfo3}}</span><br>
+        <span>最优区块hash：{{.BlockChainInfo4}}</span><br>
+        <span>最近区块之前的11个区块的中位时间：{{.BlockChainInfo5}}</span><br>
+        <span>区块验证进度：{{.BlockChainInfo6}}</span><br>
+        <span>区块修剪后为：{{.BlockChainInfo7}}</span><br>
+        <span>软分叉描述数组：{{.BlockChainInfo8}}</span><br>
+    </div>
+
+</div>
+<div id="fade1" class="black_overlay">
+</div>
+<div id="MyDiv1" class="white_content">
+    <div style="text-align: right; cursor: default; height: 40px;" id="move1">
+        <span style="font-size: 16px;" onclick="CloseDiv1('MyDiv1','fade1')">关闭</span>
+    </div>
+    <div>
+
+        <span> 当前的区块总数为：{{.BlockCount}}</span>
+
+    </div>
+
+</div>
+<div id="fade2" class="black_overlay">
+</div>
+<div id="MyDiv2" class="white_content">
+    <div style="text-align: right; cursor: default; height: 40px;" id="move2">
+        <span style="font-size: 16px;" onclick="CloseDiv2('MyDiv2','fade2')">关闭</span>
+    </div>
+    <div>
+
+        <span> 第0个的区块hash值为：{{.BlockHash}}</span>
+
+    </div>
+</div>
+<div id="fade3" class="black_overlay">
+</div>
+<div id="MyDiv3" class="white_content">
+    <div style="text-align: right; cursor: default; height: 40px;" id="move3">
+        <span style="font-size: 16px;" onclick="CloseDiv3('MyDiv3','fade3')">关闭</span>
+    </div>
+    <div>
+
+        <span> 第0个的区块hash值为：{{.BlockHash}}</span>
+
+    </div>
+</div>
+<div id="fade4" class="black_overlay">
+</div>
+<div id="MyDiv4" class="white_content">
+    <div style="text-align: right; cursor: default; height: 40px;" id="move1">
+        <span style="font-size: 16px;" onclick="CloseDiv4('MyDiv4','fade4')">关闭</span>
+    </div>
+    <div>
+
+        <span> 最后一个区块hash值为：{{.BestBlockHash}}</span>
+
+    </div>
+
+</div>
+<div id="fade5" class="black_overlay">
+</div>
+<div id="MyDiv5" class="white_content">
+    <div style="text-align: right; cursor: default; height: 40px;" id="move1">
+        <span style="font-size: 16px;" onclick="CloseDiv5('MyDiv5','fade5')">关闭</span>
+    </div>
+    <div>
+
+        <span> 本地最高位区块的高度：{{.GetMininginfo}}</span><br>
+        <span> 当前所连接网络，main、test或regtest：{{.GetMininginfo1}}</span><br>
+        <span> 最高位区块的难度：{{.GetMininginfo2}}</span><br>
+        <span> 挖矿所需要注意的是：{{.GetMininginfo3}}</span><br>
+        <span> 为维持当前难度，全网每秒需要生成的哈希数量：{{.GetMininginfo4}}</span><br>
+        <span> 内存交易池中的交易数量：{{.GetMininginfo5}}</span><br>
+
+
+    </div>
+</div>
+
+<div id="fade6" class="black_overlay">
+</div>
+<div id="MyDiv6" class="white_content">
+    <div style="text-align: right; cursor: default; height: 40px;" id="move6">
+        <span style="font-size: 16px;" onclick="CloseDiv6('MyDiv6','fade6')">关闭</span>
+    </div>
+    <div>
+
+        <span> 钱包版本：{{.GetWalletInfo}}</span><br>
+        <span> 钱包余额：{{.GetWalletInfo1}}</span><br>
+        <span> 钱包内交易数量：{{.GetWalletInfo2}}</span><br>
+        <span> 密钥池内最早密钥创建时间：{{.GetWalletInfo3}}</span><br>
+        <span> 密钥池大小：{{.GetWalletInfo4}}</span><br>
+        <span> 钱包解锁至何时，仅当钱包加密时有效：{{.GetWalletInfo5}}</span><br>
+
+    </div>
+</div>
+<div id="fade7" class="black_overlay">
+</div>
+<div id="MyDiv7" class="white_content">
+    <div style="text-align: right; cursor: default; height: 40px;" id="move7">
+        <span style="font-size: 16px;" onclick="CloseDiv7('MyDiv7','fade7')">关闭</span>
+    </div>
+    <div>
+
+        <span> 校验位为：{{.VerifyChain}}</span>
+
+    </div>
+</div>
+
+<div id="fade8" class="black_overlay">
+</div>
+<div id="MyDiv8" class="white_content">
+    <div style="text-align: right; cursor: default; height: 40px;" id="move8">
+        <span style="font-size: 16px;" onclick="CloseDiv8('MyDiv8','fade8')">关闭</span>
+    </div>
+    <div>
+        <span> 第0个被修改的区块高度为：{{.Pruneblockchain}}</span>
+    </div>
+</div>
+<div id="fade9" class="black_overlay">
+</div>
+<div id="MyDiv9" class="white_content">
+    <div style="text-align: right; cursor: default; height: 40px;" id="move9">
+        <span style="font-size: 16px;" onclick="CloseDiv9('MyDiv9','fade9')">关闭</span>
+    </div>
+    <div>
+
+        <span> 第0个区块头高度：{{.GetBlockHeader}}</span><br>
+        <span> 第0个区块头的获取难度：{{.GetBlockHeader1}}</span><br>
+        <span> 第0个区块头的工作总数：{{.GetBlockHeader2}}</span><br>
+        <span> 第0个区块头的比特币：{{.GetBlockHeader3}}</span><br>
+        <span> 第0个区块头的工作量证明：{{.GetBlockHeader4}}</span><br>
+        <span> 第0个区块的下一个hash值：{{.GetBlockHeader5}}</span><br>
+        <span> 第0个区块头的时间：{{.GetBlockHeader6}}</span><br>
+        <span> 第0个区块头的UTX：{{.GetBlockHeader7}}</span><br>
+        <span> 第0个区块头的版本：{{.GetBlockHeader8}}</span><br>
+        <span> 第0个区块头的版本号：{{.GetBlockHeader9}}</span><br>
+
+    </div>
+</div>
+<div id="fade10" class="black_overlay">
+</div>
+<div id="MyDiv10" class="white_content">
+    <div style="text-align: right; cursor: default; height: 40px;" id="move10">
+        <span style="font-size: 16px;" onclick="CloseDiv10('MyDiv10','fade10')">关闭</span>
+    </div>
+    <div>
+        <span> 获取区块的难度为：{{.GetDifficulty}}</span><br>
+    </div>
+</div>
+<div id="fade11" class="black_overlay">
+</div>
+<div id="MyDiv11" class="white_content">
+    <div style="text-align: right; cursor: default; height: 40px;" id="move11">
+        <span style="font-size: 16px;" onclick="CloseDiv11('MyDiv11','fade11')">关闭</span>
+    </div>
+    <div>
+        <span> 获取区块交易的时间为：{{.Getchaintxstats}}</span><br>
+        <span> 获取区块交易的总数为：{{.Getchaintxstats1}}</span><br>
+        <span> 获取区块交易的速度为：{{.Getchaintxstats2}}</span><br>
+        <span> 获取网络区块的数量为：{{.Getchaintxstats3}}</span><br>
+        <span> 获取网络的最后一个区块的哈希为：{{.Getchaintxstats4}}</span><br>
+        <span> 获取网络最后一个的高度为：{{.Getchaintxstats5}}</span><br>
+        <span> 获取区块网络的间隔为：{{.Getchaintxstats6}}</span><br>
+        <span> 获取区块网络的总数为：{{.Getchaintxstats7}}</span><br>
+    </div>
+</div>
+
+
+</body>
+</html>

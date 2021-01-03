@@ -1,0 +1,43 @@
+<html>
+<head>
+    <link type="text/css" href="css/Loginstyle.css" rel="stylesheet"/>
+    <link type="text/css" href="css/register.css" rel="stylesheet"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>注册</title>
+    <div class="container"></div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jparticle.min.js"></script>
+    <script type="text/javascript" src="js/Login.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".container").jParticle({
+                background: "rgba(0,0,0,0)",//背景颜色
+                color: "#fff",//粒子和连线的颜色
+                particlesNumber: 200,//粒子数量
+                //disableLinks:true,//禁止粒子间连线
+                //disableMouse:true,//禁止粒子间连线(鼠标)
+                particle: {
+                    minSize: 1,//最小粒子
+                    maxSize: 3,//最大粒子
+                    speed: 30,//粒子的动画速度
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<form method="post" action="/user_register" id="submit">
+    <div id="div-Login" style="position:absolute;top:220px;left:725px;">
+        <input type="text" placeholder="请输入用户名" autofocus="autofocus" name="username" id="user"/>
+        <input type="password" placeholder="请输入密码" name="password" id="pwd"/>
+        <img src="image/user.png" id="img-user"/>
+        <img src="image/password.png" id="img-pwd"/>
+        <input type="reset" value="重置" id="btn-reset"/>
+        <input type="submit" value="注册" id="btn-register">
+    </div>
+</form>
+<form method="post" action="/user_register">
+    <button id="btn-back" onclick="back()" style="position:absolute;top:520px;left:935px;">返回</button>
+</form>
+</body>
+</html>
