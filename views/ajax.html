@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/static/js/jquery-1.7.2.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function fun() {
+            return false;
+        }
+        function test() {
+            var method=document.getElementById("method").value;
+            var params=document.getElementById("params").value;
+            var command={
+                "method":method,
+                "params":params
+            };
+            $.ajax({
+                type:"post",
+                url:"/ajax",
+                dataType:"json",
+                contentType:"application/json; charset=utf-8",
+                data:JSON.stringify(command),
+                success:function (data) {
+                    object=JSON.parse(data);
+                    objects = JSON.stringify(object,null,"\t");
+                    document.getElementById("content").innerHTML=objects;
+                },
+            })
+
+        }
+    </script>
+</head>
+<body>
+<form action="" method="post" onsubmit="return fun()">
+    <input type="text" name="method" id="method"><br/>
+    <input type="text" name="params" id="params"><br/>
+    <input type="button" value="submit"onclick="test()">
+
+</form>
+<pre id="content">
+
+</pre>
+
+</body>
+</html>

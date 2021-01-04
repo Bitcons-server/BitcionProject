@@ -20,4 +20,7 @@ func init() {
 	beego.Router("/test",&controllers.Test{})
 
 
+	beego.Router("ajax",&controllers.Home{})
+
+
 }
